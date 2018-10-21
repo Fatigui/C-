@@ -61,7 +61,7 @@ return log(x);
  string loop(string bridge){
      cout<<" "<< endl;
      do{
-      cout<<"Voulez-vous une autre opération ?(oui/non)"<< endl;
+      cout<<"Voulez-vous une autre opration ?(oui/non)"<< endl;
       cin>>bridge;
    }while(bridge!="oui"&& bridge!="Oui" && bridge!="OUi"&& bridge!="OUI" && bridge!="OuI" &&bridge!="oUi" && bridge!="ouI" && bridge!="OUi" && bridge!="OuI" &&bridge!="oUI" && bridge!="non"&& bridge!="nOn"&& bridge!="noN"&& bridge!="Non"
             && bridge!="NOn" && bridge!="NON" && bridge!="NoN");
@@ -73,8 +73,9 @@ cout<<" "<< endl;system("CLS");
 }
 else{
 
-cout<<" Accéder à (CODEBLOCKS\\VotreNomDeProject\\CalculatorHistory.txt ) pour examiner votre histoire de calcul "<< endl;
-exit(1);
+cout<<" Acceder à (C:\\ ...\\Desktop\\CalculatorHistory.txt ) pour examiner votre histoire de calcul \n N.B : Il faut placer l application AdvCalculator dans le bureau  ."<< endl;
+
+system("pause");exit(true);
 }
  }
 
@@ -132,11 +133,11 @@ while(!(cin>>a)){
     cout<<"Erreur: Entrer un Nombre !";
     cout<<""<< endl;cin.clear();cin.ignore(123,'\n');
 }
-cout << "Entrez le deuxième Nombre :" << endl;
+cout << "Entrez le deuxieme Nombre :" << endl;
 while(!(cin>>b)){
     cout<<"Erreur: Entrer un Nombre!";
     cout<<"" <<endl;cin.clear();cin.ignore(123,'\n');}
-do {cout<<"Entrer L'opérateur !:(+ : - : * :  /)"<< endl;
+do {cout<<"Entrer L operateur !:(+ : - : * :  /)"<< endl;
 cin>>op;}while(op!="+"&&op!="-"&&op!="*"&&op!="/");
 if(op=="+"){result=a+b;mark(30);
 cout<<"La somme de " <<a<<" et "<<b<<" est :     "<<result<< endl;mark(30);
@@ -159,7 +160,7 @@ loop(Pt);
 else{
 
 
-do {cout<<"Entrer L'operateur !:(sin , cos , tan , log , exp , racine , puissance)"<< endl;
+do {cout<<"Entrer L operateur !:(sin , cos , tan , log , exp , racine , puissance)"<< endl;
 cin>>op;}while(op!="sin"&&op!="cos"&&op!="tan"&&op!="log"&&op!="exp"&&op!="racine"&&op!="puissance");
 cout<<"Entrer votre nombre : "<< endl;
 while(!(cin>>x)){
@@ -170,9 +171,9 @@ if(op=="log"){mark(30);cout<<"Le Logarithme de "<<x<<" est :    "<<_log(x)<< end
 if(op=="sin"){mark(30);cout<<"Le Sinus de "<<x<<" est :    "<<_sin(x)<< endl;mark(30);PrintOp2(i,"Le Sinus de ",x,_sin(x));PrintTD();}
 if(op=="cos"){mark(30);cout<<"Le Cosinus de "<<x<<" est :    "<<_cos(x)<< endl;mark(30);PrintOp2(i,"Le Cosinus de  ",x,_cos(x));PrintTD();}
 if(op=="tan"){mark(30);cout<<"La Tangente de "<<x<<" est :    "<<_tan(x)<< endl;mark(30);PrintOp2(i,"La Tangente de ",x,_tan(x));PrintTD();}
-if(op=="exp"){mark(30);cout<<"L'exponentielle de "<<x<<" est :    "<<_exp(x)<< endl;mark(30);PrintOp2(i,"L'exponentielle de  ",x,_exp(x));PrintTD();}
+if(op=="exp"){mark(30);cout<<"L exponentielle de "<<x<<" est :    "<<_exp(x)<< endl;mark(30);PrintOp2(i,"L'exponentielle de  ",x,_exp(x));PrintTD();}
 if(op=="racine"){mark(30);cout<<"La racine carrée de "<<x<<" est :    "<<_sqrt(x)<< endl;mark(30);PrintOp2(i,"La racine carrée de  ",x,_sqrt(x));PrintTD();}
-if(op=="puissance"){cout<<"Entrer la puissance désirée :"<< endl;
+if(op=="puissance"){cout<<"Entrer la puissance desiree :"<< endl;
 while(!(cin>>ps)){
     cout<<"Erreur:Entrer un nombre";
     cout<<""<< endl;cin.clear();cin.ignore(123,'\n');
