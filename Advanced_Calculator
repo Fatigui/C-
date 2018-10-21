@@ -11,6 +11,8 @@ using namespace std;
 ofstream fileClc;
 
 
+
+
 double PrintOp1(string _op,int id,string outp, double y, double v,double w ){
     if(_op=="/"){
 fileClc<<"("<<id<<")"<<"   : "<<outp<<" de   "<<y<<"   sur    "<<v<<"    est :     "<<w;}
@@ -69,10 +71,10 @@ cout<<" "<< endl;system("CLS");
  if(bridge=="oui"|| bridge=="Oui" || bridge=="OUi"|| bridge=="OUI" || bridge=="OuI" || bridge=="oUi" || bridge=="ouI" || bridge=="OUi" || bridge=="OuI" || bridge=="oUI"){
 
 }
-else{exit(1);
+else{
 
-
-
+cout<<" Accéder à (CODEBLOCKS\\VotreNomDeProject\\CalculatorHistory.txt ) pour examiner votre histoire de calcul "<< endl;
+exit(1);
 }
  }
 
@@ -109,7 +111,7 @@ while(true){
 
 int main(){
 
-fileClc.open("calculatorHistory.txt");
+fileClc.open("CalculatorHistory.txt");
 int i;
 double a,b,result,x,ps;
 char section;
